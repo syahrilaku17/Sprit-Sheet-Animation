@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="asset/css/main.css">
+</head>
+<body>
+
+    <!-- main content -->
+    <div id="kotak">
+
+    </div>
+    <div id="kotak-2">
+
+    </div>
+    <div id="kotak-3">
+
+    </div>
+    <div id="kotak-4">
+
+    </div>
+    <!--<script src="main.js"></script>-->
+    <script>
+        var kotak = document.getElementById('kotak');
+        var kotak2 = document.getElementById('kotak-2');
+        var kotak3 = document.getElementById('kotak-3');
+        var kotak4 = document.getElementById('kotak-4');
+        jalan =0;
+        jalanKi = 0;
+
+        document.addEventListener('keydown', function (event) {
+
+            var keyPress = String.fromCharCode(event.keyCode);
+
+            if (keyPress == 'D'){
+                jalan += 10;
+                kotak.style.transform="translateX(" +jalan+ "px)";
+                kotak.style.animation="kanan 0.4s steps(4) infinite";
+                kotak2.style.transform="translateX(" +jalan+ "px)";
+                kotak2.style.animation="kanan 0.7s steps(4) infinite";
+                kotak2.style.marginLeft="140px";
+                kotak3.style.transform="translateX(" +jalan+ "px)";
+                kotak3.style.animation="kanan 0.5s steps(4) infinite";
+                kotak3.style.marginLeft="40px";
+                kotak4.style.transform="translateX(" +jalan+ "px)";
+                kotak4.style.animation="kanan 1s steps(5) infinite";
+            } else if (keyPress == 'A'){
+                jalan -= 10;
+                kotak.style.transform="translateX(" +jalan+ "px)";
+                kotak.style.animation="kiri 0.7s steps(4) infinite";
+                kotak2.style.transform="translateX(" +jalan+ "px)";
+                kotak2.style.animation="kiri 0.7s steps(4) infinite";
+                kotak3.style.transform="translateX(" +jalan+ "px)";
+                kotak3.style.animation="kiri 0.7s steps(4) infinite";
+                kotak4.style.transform="translateX(" +jalan+ "px)";
+                kotak4.style.animation="kiri-robin 0.7s steps(4) infinite";
+            }
+
+        });
+
+        document.addEventListener('keyup', function (event) {
+            kotak.style.animationPlayState="";
+
+        });
+    </script>
+</body>
+</html>

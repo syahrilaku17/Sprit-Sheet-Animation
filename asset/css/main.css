@@ -1,0 +1,56 @@
+body{
+    background: url("../img/bg_awan.png") no-repeat;
+    background-size: cover;
+}
+#kotak{
+    margin-top: 2%;
+    width: 175px;
+    height: 140px;
+    background: url(../img/kanan-kiri-naga_fix.png);
+}
+#kotak-2{
+    margin-top: 1%;
+    width: 175px;
+    height: 140px;
+    background: url(../img/kanan-kiri-naga_fix.png);
+}
+#kotak-3{
+    margin-top: 1%;
+    width: 175px;
+    height: 140px;
+    background: url(../img/kanan-kiri-naga_fix.png);
+}
+#kotak-4{
+    margin-left:70%;
+    width: 400px;
+    height: 125px;
+    background: url(../img/kol_2.png);
+}
+
+@keyframes kanan {
+
+    0%{
+        background-position: 0px 0px;
+    }
+    100%{
+        background-position : -864px 0px;
+    }
+}
+@keyframes kiri {
+
+    0%{
+        background-position: -864px 140px;
+    }
+    100%{
+        background-position : 0px 140px;
+    }
+}
+@keyframes kiri-robin {
+
+    0%{
+        background-position: -864px 125px;
+    }
+    100%{
+        background-position : 0px 125px;
+    }
+}
